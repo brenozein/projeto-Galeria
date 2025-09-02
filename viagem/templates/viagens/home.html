@@ -22,7 +22,7 @@
                     <!-- Breno Luiz Raghianti Zein   -->
                 </div>
                 <h1 class="text-4xl font-bold text-center sm:text-left">
-                    Minhas Receitas Deliciosas
+                    Minhas Viagens Pelo Mundo
                 </h1>
             </div>
             <nav class="mt-4 sm:mt-0"></nav>
@@ -30,12 +30,12 @@
     </header>
     <!-- Conteúdo principal da página -->
     <section class="container mx-auto mt-8 p-4 flex justify-center">
-       <form method="get" action="{% url 'pesquisar_receitas'%}"
+       <form method="get" action="{% url 'pesquisar_viagens'%}"
              class="w-full max-w-lg flex bg-white rounded-full shadow -md overflow-hidden">
             <input
                 type="text"
                 name="q"
-                placeholder="Pesquisar receitas..."
+                placeholder="Pesquisar viagens..."
                 class="flex-grow p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-l-full pl-5">
             <button type="submit"
                 class="bg-orange-500 hover:bg-orange-600 text-white p-3 px-6 rounded-r-full transition-300 ease-in-out flex items-center justify-center">
@@ -44,9 +44,9 @@
         </form>
     </section>
     <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
-        <!-- Título da seção de receitas -->
-        <h2 class="text-2xl font-semibold mb-4 text-center">Nossas últimas receitas</h2>
-        <!-- Container Flexível para as receitas -->
+        <!-- Título da seção de viagens -->
+        <h2 class="text-2xl font-semibold mb-4 text-center">Minhas últimas viagens</h2>
+        <!-- Container Flexível para as viagens -->
         <div class="flex flex-wrap justify-center gap-6">
             <!-- Receita 1 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
@@ -91,11 +91,11 @@
                 <a href="{% url 'receita_detail' id=6 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
             </div>
         </div>
-        <!-- <p class="text-lg text-gray-700">Aqui você poderá organizar e compartilhar suas receitas favoritas</p>
-        <p class="mt-4 text-gray-600">Este é o início da sua jornada culinária com Django.</p> -->
+        <!-- <p class="text-lg text-gray-700">Aqui você poderá organizar minhas viagens favoritas</p> -->
+       
     </main>
     <footer class="mt-12 p-6 text-center text-gray-600">
-        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a Breno</p>
+        <p>&copy; 2025 Minhas Viagens. Todos os direitos reservados a Breno</p>
     </footer>
 </body>
 </html>

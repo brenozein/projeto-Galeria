@@ -24,24 +24,24 @@
         </h2>
         <div class="flex flex-wrap justify-center gap-6">
             {% if resultados %}
-                {% for receita in resultados %}
+                {% for viagem in resultados %}
                     <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-mb hover: shadow=lg transition-shadow duration-300 ease-in-out">
-                        <img src="{{ receita.image.url }}" alt="[Imagem de {{ receita.title }}]" class="w-full h-48 object-cover rounded-md mb-4">
-                        <h3 class="text-x1 font-bold mb-2 text-gray-800">{{ receita.title }}</h3>
-                        <p class="text-gary-600 mb-4">{{ receita.description|truncatewords:20 }}</p>
-                        <a href="{% url 'receita_detail' id=receita.id%}" class="text-orange-600 hover:text-orange-800 font-semibold">
-                            Ver Receita &rarr;
+                        <img src="{{ viagem.image.url }}" alt="[Imagem de {{ viagem.title }}]" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-x1 font-bold mb-2 text-gray-800">{{ viagem.title }}</h3>
+                        <p class="text-gary-600 mb-4">{{ viagem.description|truncatewords:20 }}</p>
+                        <a href="{% url 'viagem_detail' id=receita.id%}" class="text-orange-600 hover:text-orange-800 font-semibold">
+                            Ver Viagem &rarr;
                         </a>
                     </div>
                 {% endfor %}
             {% else %}
-                    <p class="text-center text-gray-600">Nenhuma receita encontrada.</p>
+                    <p class="text-center text-gray-600">Nenhuma viagem encontrada.</p>
                 {% endif %}
         </div>
     </main>
 
     <footer class="mt-12 p-6 text-center text-gray-600">
-         <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a Breno</p>
+         <p>&copy; 2025 Minhas Viagens. Todos os direitos reservados a Breno</p>
     </footer>
 </body>
     

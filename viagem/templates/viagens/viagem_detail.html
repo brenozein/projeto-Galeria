@@ -29,33 +29,33 @@
         </div>
    </header>
 
-   <!--Conteúdo Principal: Detalhes da Receita-->
+   <!--Conteúdo Principal: Detalhes da Viagem-->
    <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
         <div class="flex flex-col md:flex-row gap-8">
-            {# Imagem da Receita #}
-            {% if receita.image %}
+            {# Imagem da Viagem #}
+            {% if viagem.image %}
                 <div class="md:w-1/2">
-                    <img src="{{ receita.image.url }}" alt="[Imagem de {{ receita.title}}]" class="w-full h-auto object-cover rounded-lg shadow-md">
+                    <img src="{{ viagem.image.url }}" alt="[Imagem de {{ viagem.title}}]" class="w-full h-auto object-cover rounded-lg shadow-md">
                 </div>
             {% endif %}
             {# Detalhes da Receita #}
             <div class="md:w-1/2">
-                <h2 class="text-4x1 font-bold text-gray-900 mb-4">{{ receita.title }}</h2>
+                <h2 class="text-4x1 font-bold text-gray-900 mb-4">{{ viagem.title }}</h2>
                 <h3 class="text-2x1 font-semibold text-gray-800 mb-2">Descrição</h3>
-                <p class="text-gray-700 mb-6 leading-relaxed">{{ receita.description }}</p>
+                <p class="text-gray-700 mb-6 leading-relaxed">{{ viagem.description }}</p>
                 <h3 class="text 2x1 font-semibold text-gray-800 mb-2">Ingredientes</h3>
-                <p class="text-gray-700 mb-6 leading-relaxed whitespace-pre-wrap">{{ receita.ingredients }}</p> {# whitespace-pre-wrap para quebra de linha #}
+                <p class="text-gray-700 mb-6 leading-relaxed whitespace-pre-wrap">{{ viagem.ingredients }}</p> {# whitespace-pre-wrap para quebra de linha #}
                 <h3 class="text-2x1 font-semibold text-gray-800 mb-2">Instruções</h3>
-                <p class="text-gray-700 mb-6 leading-relaxed whitespace-pre-wrap">{{ receita.instructions }}</p> {# whitespace-pre-wrap para quebra de linha #}
+                <p class="text-gray-700 mb-6 leading-relaxed whitespace-pre-wrap">{{ viagem.instructions }}</p> {# whitespace-pre-wrap para quebra de linha #}
             </div>
         </div>
         <div class="mt-8 text-center">
             <a href="{% url 'home' %}" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out shadow-lg">
-                &larr; Voltar para a Lista de Receitas</a>
+                &larr; Voltar para a Lista de Viagens</a>
         </div>
    </main>
    <footer class="mt-12 p-6 text-center text-gray-600">
-        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a Breno</p>
+        <p>&copy; 2025 Minhas Viagens. Todos os direitos reservados a Breno</p>
    </footer>
 </body>
 </html>

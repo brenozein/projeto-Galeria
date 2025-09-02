@@ -1,12 +1,12 @@
 from django.db import models
 
-class Receita(models.Model):
+class Viagem(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     ingredients = models.TextField()
     instructions = models.TextField()
-    # Campo para a imagem de receita
-    image =models.ImageField(upload_to='receitas/images/', blank=True, null=True)
+    # Campo para a imagem da viagem
+    image =models.ImageField(upload_to='viagens/images/', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -14,6 +14,6 @@ class Receita(models.Model):
         return self.title
     
     class Meta:
-        verbose_name = "Receita"
-        verbose_name_plural = "Receitas"
-        ordering = ['-created_at'] #Ordena as receitas pela data de criação (mais novas primeiro)
+        verbose_name = "Viagem"
+        verbose_name_plural = "Viagens"
+        ordering = ['-created_at'] #Ordena as viagens pela data (mais novas primeiro)

@@ -12,20 +12,20 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Receitas',
+            name='Viagens',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=200)),
                 ('description', models.TextField()),
                 ('ingredients', models.TextField()),
                 ('instructions', models.TextField()),
-                ('imgage', models.ImageField(blank=True, null=True, upload_to='receitas/imagens/')),
+                ('imgage', models.ImageField(blank=True, null=True, upload_to='viagens/imagens/')),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
             ],
             options={
-                'verbose_name': 'Receita',
-                'verbose_name_plural': 'Receitas',
+                'verbose_name': 'Viagem',
+                'verbose_name_plural': 'Viagens',
                 'ordering': ['-created_at'],
             },
         ),
