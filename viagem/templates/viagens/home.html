@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Receitas</title>
+    <title>Minhas Viagens</title>
     <script src="https://cdn.tailwindcss.com"></script><!-- Esta tag serve para importar o Tailwind CSS na sua página -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
@@ -18,7 +18,7 @@
         <div class="containser mx-auto flex flex-col sm:flex-row items-center justify-center">
             <div class="flex items-cener mb-4 sm:mb-0">
                 <div class="text-4xl mr-4">
-                    <i class="fas fa-utensils"></i>
+                    <i class="fas fa-plane"></i>
                     <!-- Breno Luiz Raghianti Zein   -->
                 </div>
                 <h1 class="text-4xl font-bold text-center sm:text-left">
@@ -50,45 +50,45 @@
         <div class="flex flex-wrap justify-center gap-6">
             <!-- Receita 1 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-                <img src="{% static 'receitas/img/Design-bolo-chocolate.webp'%}" alt="[Imagem de Bolo de Chocolate]" class="w-full h-48 objevt-cover rounded-md mb-4">
-                <h3 class="text-xl font-bold mb-2 text-gray-800">Receita de Bolo de Chocolate</h3>
-                <p class="text-gray-600 mb-4">Um bolo clássico, úmdo e delicioso, perfeito para qualquer ocasião.</p>
-                <a href="{% url 'receita_detail' id=1 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+                <img src="{% static 'viagens/img/imagessantos.jpg'%}" alt="[Viagem para Santos]" class="w-full h-48 objevt-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Viagem para Santos</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <a href="{% url 'viagem_detail' id=1 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Viagem &rarr;</a>
             </div>
             <!-- Receita 2 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-                <img src="{% static 'receitas/img/frango-ervas.jpg'%}" alt="[Imagem de Frango Assado com Ervas]" class="w-full h-48 objevt-cover rounded-md mb-4">
-                <h3 class="text-xl font-bold mb-2 text-gray-800">Frango Assado com Ervas</h3>
-                <p class="text-gray-600 mb-4">Uma receita simples e saborosa de frango assado com um toque de ervas frescas. </p>
-                <a href="{% url 'receita_detail' id=2 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+                <img src="{% static 'viagens/img/imagesholambra.jpg'%}" alt="[Viagem para Holambra]" class="w-full h-48 objevt-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Viagem para Holambra</h3>
+                <p class="text-gray-600 mb-4"> </p>
+                <a href="{% url 'viagem_detail' id=2 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Viagem &rarr;</a>
             </div>
             <!-- Receita 3 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-                <img src="{% static 'receitas/img/salada-mediterranea.jpg'%}" alt="[Imagem de Slaada Mediterrânea Fresca]" class="w-full h-48 objevt-cover rounded-md mb-4">
-                <h3 class="text-xl font-bold mb-2 text-gray-800">Salada Mediterrânea Fresca</h3>
-                <p class="text-gray-600 mb-4">Uma salada refrescante, cheia de sabores do Mediterrâneo.</p>
-                <a href="{% url 'receita_detail' id=3 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+                <img src="{% static 'viagens/img/Bonito-MS-O-que-Fazer-Capa.jpg'%}" alt="[Viagem para Bonito]" class="w-full h-48 objevt-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Viagem para Bonito</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <a href="{% url 'viagem_detail' id=3 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Viagem &rarr;</a>
             </div>
             <!-- Receita 4 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-                <img src="{% static 'receitas/img/torta-de-limo.jpg'%}" alt="[Imagem de Torta de Limão Cremosa]" class="w-full h-48 objevt-cover rounded-md mb-4">
-                <h3 class="text-xl font-bold mb-2 text-gray-800">Torta de Limão Cremosa</h3>
-                <p class="text-gray-600 mb-4">Uma torta clássica com recheio de limão azedinho e merengue tostado.</p>
-                <a href="{% url 'receita_detail' id=4 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+                <img src="{% static 'viagens/img/bfb7e46daa73ffe3206abbe43a384354ilha.avif'%}" alt="[Viagem para Ilha Bela]" class="w-full h-48 objevt-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Viagem para Ilha Bela</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <a href="{% url 'viagem_detail' id=4 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Viagem &rarr;</a>
             </div>
             <!-- Receita 5 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-                <img src="{% static 'receitas/img/sopa-cremosa-legumes.jpg'%}" alt="[Imagem de Sopa de Legumes Nutritiva]" class="w-full h-48 objevt-cover rounded-md mb-4">
-                <h3 class="text-xl font-bold mb-2 text-gray-800">Sopa de Legumes Nutritiva</h3>
-                <p class="text-gray-600 mb-4">Uma sopa reconfortante e cheia de vegetais frescos, perfeita para dias frios.</p>
-                <a href="{% url 'receita_detail' id=5 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+                <img src="{% static 'viagens/img/atracoes-beto-carrero-world-tudo-o-que-voce-nao-pode-perder.jpg'%}" alt="[Viagem para Beto Carrero]" class="w-full h-48 objevt-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Viagem para Beto Carrero</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <a href="{% url 'viagem_detail' id=5 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Viagem &rarr;</a>
             </div>
             <!-- Receita 6 -->
             <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
-                <img src="{% static 'receitas/img/risoto.png'%}" alt="[Imagem de Risoto de Cogumelos Selvagens]" class="w-full h-48 objevt-cover rounded-md mb-4">
-                <h3 class="text-xl font-bold mb-2 text-gray-800">Risoto de Cogumelos Selvagens</h3>
-                <p class="text-gray-600 mb-4">Um risoto cremoso e aromático, com uma mistura rica de cogumelos selvagens.</p>
-                <a href="{% url 'receita_detail' id=6 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+                <img src="{% static 'viagens/img/4142-itaipupanoramica2real.webp'%}" alt="[Viagem para Itaipu]" class="w-full h-48 objevt-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Viagem para Itaipu</h3>
+                <p class="text-gray-600 mb-4"></p>
+                <a href="{% url 'viagem_detail' id=6 %}" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Viagem &rarr;</a>
             </div>
         </div>
         <!-- <p class="text-lg text-gray-700">Aqui você poderá organizar minhas viagens favoritas</p> -->

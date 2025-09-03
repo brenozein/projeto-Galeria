@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Viagem # Importe seu modelo Viagem
+from .models import Viagens # Importe seu modelo Viagem
 
-admin.site.register(Viagem)
+admin.site.register(Viagens)
 

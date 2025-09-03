@@ -1,10 +1,8 @@
 from django.db import models
 
-class Viagem(models.Model):
+class Viagens(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
-    ingredients = models.TextField()
-    instructions = models.TextField()
     # Campo para a imagem da viagem
     image =models.ImageField(upload_to='viagens/images/', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
